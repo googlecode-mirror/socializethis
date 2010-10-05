@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author><![CDATA[Mike Rogers]]></author>
+	<author_url><![CDATA[http://www.fullondesign.co.uk/]]></author_url>
+	<name>AddThis</name>
+	<preview>addthis/addthis.png</preview>
+	<description></description>
+	<widget>
+		<name>AddThis Button #1</name>
+		<html><![CDATA[<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4ca3f7522e6e7fdb" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ca3f7522e6e7fdb"></script>
+<!-- AddThis Button END -->
+]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>AddThis Button #2</name>
+		<html><![CDATA[<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ca3f765631b5e3c"></script>
+<!-- AddThis Button END -->
+]]></html>
+		<enabled>0</enabled>
+	</widget><widget>
+		<name>AddThis Button #3</name>
+		<html><![CDATA[<!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4ca3f7710e522e20"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4ca3f7710e522e20"></script>
+<!-- AddThis Button END -->
+]]></html>
+		<enabled>0</enabled>
+	</widget>
+</channel>

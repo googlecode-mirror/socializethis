@@ -1,0 +1,17 @@
+ul.socialize-this{
+display:block;
+list-style:none;
+text-align:center;
+padding: 0; margin: 10px 0;
+}
+ul.socialize-this img{
+border:none;
+}
+ul.socialize-this li{
+display:inline;
+padding: 0; margin: 3px;
+opacity:0.9;
+}
+ul.socialize-this li:hover{
+opacity:1;
+}

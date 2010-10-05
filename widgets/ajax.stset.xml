@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author><![CDATA[Mike Rogers]]></author>
+	<author_url><![CDATA[http://www.fullondesign.co.uk/]]></author_url>
+	<name>AJAX Social Widgets</name>
+	<preview>ajax/ajax.jpg</preview>
+	<description>Widgets that use AJAX to be funky.</description>
+		<widget>
+			<author><![CDATA[TweetMeme]]></author>
+			<author_url><![CDATA[http://tweetmeme.com/]]></author_url>
+			<name>TweetMeme</name>
+			<html><![CDATA[<script type="text/javascript">var tweetmeme_url = '%raw_permalink%';</script><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[Reddit]]></author>
+			<author_url><![CDATA[http://www.reddit.com/]]></author_url>
+			<name>Reddit</name>
+			<html><![CDATA[<script type="text/javascript">var reddit_url = '%raw_permalink%';</script><script type="text/javascript" src="http://reddit.com/static/button/button3.js"></script>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[Twitter]]></author>
+			<author_url><![CDATA[http://twitter.com/]]></author_url>
+			<name>Tweet</name>
+			<html><![CDATA[<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><a href="http://twitter.com/share" class="twitter-share-button" data-url="%short_url%" data-count="vertical">Tweet</a>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[Digg]]></author>
+			<author_url><![CDATA[http://digg.com/]]></author_url>
+			<name>Digg</name>
+			<html><![CDATA[<script type='text/javascript'>digg_url = '%raw_permalink%';</script><script src='http://digg.com/tools/diggthis.js' type='text/javascript'/>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[StumbleUpon]]></author>
+			<author_url><![CDATA[http://www.stumbleupon.com/]]></author_url>
+			<name>StumbleUpon</name>
+			<html><![CDATA[<script src="http://www.stumbleupon.com/hostedbadge.php?s=5&r=%permalink%"></script>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[Facebook]]></author>
+			<author_url><![CDATA[http://www.facebook.com/]]></author_url>
+			<name>Facebook</name>
+			<html><![CDATA[<iframe src="http://www.facebook.com/plugins/like.php?href=%permalink%&amp;layout=button_count&amp;show_faces=true&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>]]></html>
+			<enabled>1</enabled>
+		</widget>
+		<widget>
+			<author><![CDATA[Google]]></author>
+			<author_url><![CDATA[http://www.google.com/]]></author_url>
+			<name>Google Reader</name>
+			<html><![CDATA[<a href="http://fusion.google.com/add?source=atgs&feedurl=%rss_url%"><img src="http://gmodules.com/ig/images/plus_google.gif" border="0" alt="Add to Google"></a>]]></html>
+			<enabled>1</enabled>
+		</widget>
+</channel>

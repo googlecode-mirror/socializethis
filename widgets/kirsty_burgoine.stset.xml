@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author><![CDATA[Kirsty Burgoine]]></author>
+	<author_url><![CDATA[http://www.kirstyburgoine.co.uk/]]></author_url>
+	<name>Social Icons</name>
+	<preview>kirsty_burgoine/kb-social-icons.jpg</preview>
+	<description></description>
+	<widget>
+		<name>Delicious</name>
+		<html><![CDATA[<a href="http://del.icio.us/submit?url=%permalink%&title=%title%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/delicious.png" width="48px" height="48px" alt="Delicious" title="Delicious" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>Facebook</name>
+		<html><![CDATA[<a href="http://www.facebook.com/sharer.php?u=%permalink%&t=%title%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/facebook.png" width="48px" height="48px" alt="Facebook" title="Facebook" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>Digg</name>
+		<html><![CDATA[<a href="http://digg.com/submit?phase=2&url=%permalink%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/digg.png" width="48px" height="48px" alt="Digg" title="Digg" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>Reddit</name>
+		<html><![CDATA[<a href="http://www.reddit.com/submit?url=%permalink%&title=%title%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/reddit.png" width="48px" height="48px" alt="Reddit" title="Reddit" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>RSS Feed</name>
+		<html><![CDATA[<a href="%rss_url%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/rss.png" width="48px" height="48px" alt="RSS Feed" title="RSS Feed" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>StumbleUpon</name>
+		<html><![CDATA[<a href="http://www.stumbleupon.com/submit?url=%permalink%&title=%title%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/stumble.png" width="48px" height="48px" alt="StumbleUpon" title="StumbleUpon" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>Twitter</name>
+		<html><![CDATA[<a href="http://twitter.com/home?status=Currently Reading %short_url%"  target="_blank"><img src="%widgets_url%/kirsty_burgoine/twitter.png" width="48px" height="48px" alt="Twitter" title="Twitter" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+	<widget>
+		<name>Technorati</name>
+		<html><![CDATA[<a href="http://www.technorati.com/faves?add=%permalink%" target="_blank"><img src="%widgets_url%/kirsty_burgoine/tech.png" width="48px" height="48px" alt="Technorati" title="Technorati" /></a>]]></html>
+		<enabled>1</enabled>
+	</widget>
+</channel>
