@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<channel>
+	<author><![CDATA[Mike Rogers]]></author>
+	<author_url><![CDATA[http://www.fullondesign.co.uk/]]></author_url>
+	<name>@Anywhere</name>
+	<preview>twitter-anywhere/twitter-anywhere.png</preview>
+	<description>This is just for reference on how to use %anywhere%</description>
+	<widget>
+		<name>@Anywhere Button</name>
+		<html><![CDATA[<script src="http://platform.twitter.com/anywhere.js?id=%anywhere%&v=1" type="text/javascript"></script><script type="text/javascript">twttr.anywhere(onAnywhereLoad);function onAnywhereLoad(twitter) {twitter('#follow-%twitter_name%').followButton("%twitter_name%");};</script><div id="follow-%twitter_name%"></div>]]></html>
+		<enabled>1</enabled>
+	</widget>
+</channel>
