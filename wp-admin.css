@@ -1,56 +1,1 @@
-@charset "utf-8";
-/* CSS Document */
-#st_top_navagation, #st_bottom_navagation {
-	text-align:center;
-	border:#CCC 1px solid;
-	padding: 5px 7px;
-	margin:5px auto 20px auto;
-	background-color:#FFF;
-}
-.message {
-	background-color:#FFFFD7;
-	text-align:center;
-	border:#CCC 1px solid;
-	padding: 2px 7px;
-	margin:0px auto 5px 0;
-}
-.error {
-	border:#FF2020 1px solid;
-}
-.message p {
-	padding: 3px 0;
-	margin: 0;
-}
-.widefat tr:nth-child(even){
-	background-color:#f9f9f9;
-}
-.hidden{
-	display:none;
-}
-.center{
-text-align:center;
-}
-.dragable{
-cursor:move;
-}
-.disabled{
-opacity:0.6;
-}
-.onDrag{
-opacity:0.7;
-background: #E0E0E0!important;
-}
-.jInitalHide{
-display:none;
-}
-textarea{
-width: 80%;
-padding: 3px;
-}
-input {
-width:60%;
-padding: 5px;
-}
-.button-primary, input[type=checkbox]{
-width:auto;
-}
+@charset "utf-8";/* CSS Document */#st_top_navagation, #st_bottom_navagation {text-align:center;border:#CCC 1px solid;padding: 5px 7px;margin:5px auto 20px auto;background-color:#FFF;}.message {background-color:#FFFFD7;text-align:center;border:#CCC 1px solid;padding: 2px 7px;margin:0px auto 5px 0;}.error {border:#FF2020 1px solid;}.message p {padding: 3px 0;margin: 0;}.widefat tr:nth-child(even){background-color:#f9f9f9;}.hidden{display:none;}.center{text-align:center;}.dragable{cursor:move;}.disabled{opacity:0.6;}.onDrag{opacity:0.7;background: #E0E0E0!important;}.jInitalHide{display:none;}textarea{width: 80%;padding: 3px;}input {width:65%;padding: 5px;}.button-primary, input[type=checkbox]{width:auto;}
