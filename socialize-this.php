@@ -7,7 +7,7 @@
 Plugin Name:Socialize This
 Plugin URI: http://www.fullondesign.co.uk/socialize-this
 Description: Adds social widgets to your blog posts. It also can update your twitter status when you publish a post.
-Version: 2.1.0
+Version: 2.1.1
 Author: Mike Rogers
 Author URI: http://www.fullondesign.co.uk/
 Text Domain: st_plugin
@@ -33,7 +33,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 */
 
 define('ST_FILE', plugin_basename(__FILE__));
-define('ST_VERSION', '2.1.0');
+define('ST_VERSION', '2.1.1');
 $st_folder = explode('socialize-this.php', __FILE__);
 define('ST_FOLER', $st_folder[0]);
 unset($st_folder);

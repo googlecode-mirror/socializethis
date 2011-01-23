@@ -104,7 +104,7 @@ class socialize_this {
         <a href="?page=socialize-this&module=social_widgets"><?php _e('Social Widgets', 'st_plugin'); ?></a> |
         <a href="?page=socialize-this&module=open_graph"><?php _e('Open Graph', 'st_plugin'); ?></a> |
         <a href="?page=socialize-this&module=advanced_functions"><?php _e('Advanced Functions/Settings', 'st_plugin'); ?></a> |
-        <a href="http://www.fullondesign.co.uk/socialize-this/faq" target="_blank"><?php _e('FAQ\'s', 'st_plugin'); ?></a>
+        <a href="http://www.fullondesign.co.uk/projects/socialize-this/faq" target="_blank"><?php _e('FAQ\'s', 'st_plugin'); ?></a>
         </div>
 <?php
     }
@@ -755,7 +755,7 @@ class socialize_this {
 
                     private function st_adm_news() {
                         if (get_option('st_enable_api') == TRUE) {
-                            $news = $this->get_link('http://www.fullondesign.co.uk/socialize-this/api/news');
+                            $news = $this->get_link('http://www.fullondesign.co.uk/projects/socialize-this/api/news');
                             if ($news != '') {
                                 echo $news;
                             }
@@ -763,7 +763,7 @@ class socialize_this {
                     }
 
                     private function st_adm_credits() {
-                        # @Rogem002 | http://www.fullondesign.co.uk/
+                        # @Rogem002 | Mike Rogers | http://www.fullondesign.co.uk/
                     }
 
                     private function st_adm_advanced_functions() {
