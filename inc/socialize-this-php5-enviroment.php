@@ -60,9 +60,8 @@ class socialize_this {
 
     public function extra_plugin_links($links, $file) {
         if ($file == ST_FILE) {
-            $links[] = '<a href="options-general.php?page=socialize-this">' . __('Settings', 'st_plugin') . '</a>';
+            $links[] = '<a href="options-general.php?page=socialize-this">' . __('Overview', 'st_plugin') . '</a>';
             $links[] = '<a href="options-general.php?page=socialize-this&module=social_widgets">' . __('Social Widgets', 'st_plugin') . '</a>';
-            $links[] = '<a href="options-general.php?page=socialize-this&module=templates">' . __('Templates', 'st_plugin') . '</a>';
         }
         return $links;
     }
@@ -1432,40 +1431,42 @@ class socialize_this {
 
                         $table_name = $wpdb->prefix . "st_social_widgets";
                         if ($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
-                            $sql = "CREATE TABLE " . $table_name . " (
-			  ID mediumint(9) NOT NULL AUTO_INCREMENT,
-			  position mediumint(9) NOT NULL,
-			  enabled int(2) NOT NULL,
-			  author VARCHAR(255) NOT NULL,
-			  author_url VARCHAR(255) NOT NULL,
-			  name VARCHAR(255) NOT NULL,
-			  html text NOT NULL,
-			  UNIQUE KEY ID (ID)
-			);";
+							$sql = "CREATE TABLE " . $table_name . " (
+							  ID mediumint(9) NOT NULL AUTO_INCREMENT,
+							  position mediumint(9) NOT NULL,
+							  enabled int(2) NOT NULL,
+							  author VARCHAR(255) NOT NULL,
+							  author_url VARCHAR(255) NOT NULL,
+							  name VARCHAR(255) NOT NULL,
+							  html text NOT NULL,
+							  UNIQUE KEY ID (ID)
+							);";
 
                             require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
                             dbDelta($sql);
                             $this->addWidgetSet('alteredicons.stset.xml');
+							
+							if ($upgrade == NULL) { // If it's a fresh install.
+								update_option('st_template_twitter_noti', 'New Post: %raw_title% %raw_short_url%');
+								update_option('st_include_in_posts', 'yes'); // activated by default.
+								// Twitter
+								update_option('st_noti_twitter', 'no');
+								update_option('st_noti_twitter_user', '');
+								update_option('st_twitter_apikey', '');
+
+								// bit.ly
+								update_option('st_bitly_user', '');
+								update_option('st_bitly_apikey', '');
+
+								update_option('st_url_shortening_service', 'isgd');
+								update_option('st_enable_api', TRUE);
+								update_option('st_extend_php_limits', NULL);
+								update_option('st_css_sheet', TRUE);
+								update_option('st_hide_donate', FALSE);
+							}
                         }
 
-                        if ($upgrade == NULL) { // If it's a fresh install.
-                            update_option('st_template_twitter_noti', 'New Post: %raw_title% %raw_short_url%');
-                            update_option('st_include_in_posts', 'yes'); // activated by default.
-                            // Twitter
-                            update_option('st_noti_twitter', 'no');
-                            update_option('st_noti_twitter_user', '');
-                            update_option('st_twitter_apikey', '');
-
-                            // bit.ly
-                            update_option('st_bitly_user', '');
-                            update_option('st_bitly_apikey', '');
-
-                            update_option('st_url_shortening_service', 'isgd');
-                            update_option('st_enable_api', TRUE);
-                            update_option('st_extend_php_limits', NULL);
-                            update_option('st_css_sheet', TRUE);
-                            update_option('st_hide_donate', FALSE);
-                        }
+                        
 
                         update_option('st_current_version', ST_VERSION);
 
